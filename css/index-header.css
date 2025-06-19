@@ -1,0 +1,11 @@
+.header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        .header-section h2 {
+            margin: 0;
+        }

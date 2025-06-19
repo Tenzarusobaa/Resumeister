@@ -1,0 +1,226 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.job-listings-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .job-listing-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+
+    .left-content {
+        flex: 0.7;
+        white-space: nowrap;
+    }
+
+    .left-content i { 
+        color: #2253ab;
+    }
+
+    .tags {
+        align-items: center;
+        text-align: center;
+    }
+
+    .tags p {
+        background-color: #2253ab;
+        padding: 3px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 5px;
+        width: 120px;
+    }
+
+.popup {
+    width: 800px;
+    max-height: 500px; /* change 'height' to 'max-height' to allow the popup to be scrollable */
+    background: rgba(0, 0, 0, 1);
+    background-color: white;
+    margin: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    overflow: auto; /* add this line to make the popup scrollable */
+    border-radius: 10px;
+}
+
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 400;
+    }
+
+    .picture-head-details {
+    margin: 30px;
+}
+
+.company-name-picture {
+    display: flex;
+}
+
+.company {
+    border: none;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 20px;
+    width: 40px;
+    padding: 5px;
+    height: 40px;
+    border: 1px solid #2253ab;
+    border-radius: 50%;
+}
+
+.company-picture {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    width: 40px;
+    height: 40px;
+    background-size: contain; /* Set the background size to contain */
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    /* Add the following properties to ensure the image is centered properly */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.company-name {
+    /* Add your own styles for the company name */
+    margin-top: -7px;
+   margin-left: -15px;
+}
+
+/* Add other necessary styles for the container and the rest of your content */
+
+.head-details h1{
+    margin-top: -10px;
+    font-size: 40px;
+
+}
+
+    #JobTitleInput {
+    height: 50px; /* Adjust the height value to match the height of the h1 */
+  }
+.head-details p {
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+.main-info-container {
+    margin: 30px;
+
+}
+
+.main-info-container h1,
+.main-info-container h2,
+.main-info-container h3,
+.main-info-container h4,
+.main-info-container h5,
+.main-info-container h6 {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.main-info-container p {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.main-info-divider {
+    border: 1px solid #2253ab;
+}
+
+
+.tags-boxes {
+    display: flex;
+    margin-left: 50px;
+
+}
+
+.tags-boxes #industry-tag, 
+.tags-boxes #location-tag, 
+.tags-boxes #type-tag {
+    background-color: #2253ab;
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
+}
+
+.tags-boxes p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.deactivate-button {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #db8184;
+    color: #a82226;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.reactivate-button {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #34d188;
+    color: #1b6944;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.save-button {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    background-color: #34d188;
+    color: #1b6944;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
